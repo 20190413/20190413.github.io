@@ -42,6 +42,8 @@
         <img src="p2.jpg" />
         <img src="p3.jpg" />
         <img src="p4.jpg" />
+        <img src="p5.jpg" />
+        <img src="p6.jpg" />
     </div>
     <br>
     <br>
@@ -67,7 +69,7 @@
         let imgs = myimgDiv.children;
         setInterval(() => {
             for (let i = 0; i<imgs.length; i++) {
-                if (current % 4 != i)
+                if (current % 6 != i)
             	    imgs[i].classList.remove("opaque");
                 else
                     imgs[i].classList.add("opaque");
