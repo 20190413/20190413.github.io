@@ -1,145 +1,29 @@
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <title>2019-04-13 Wedding</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style type="text/css">
-    .mySlides {
-        border-radius: 20px;
-        display: none;
-        max-width: 800px;
-    }
-    
-    .w3-display-container {
-        max-width: 800px;
-    }
-    
-    .img-button {
-        border: none;
-        display: inline-block;
-        padding: 8px 16px;
-        vertical-align: middle;
-        overflow: hidden;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-        white-space: nowrap;
-        background: none!important;
-        font-weight: bold;
-        font-size: 30px;
-    }
-    
     .text-img {
         width: 100%;
     }
-    
-    .img-button:hover {
-        opacity: 0.3;
-    }
-    
-    .img-button.display-left {
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        transform: translate(0%, -50%);
-    }
-    
-    .img-button.display-right {
-        position: absolute;
-        top: 50%;
-        right: 0%;
-        transform: translate(0%, -50%);
-    }
-
-    footer {
-        background: #908f8c;
-        text-align: center;
-        color: white;
-        font-family: sans-serif;
-        padding: 10px;
-        font-size: 18px;
-        line-height: 24px;
-
-    }
 </style>
 
-<body onload="init()">
+<body>
     <img class="text-img" src="t1_1.gif">
     <img class="text-img" src="t1_1.jpg">
-    <div>
-        <div>
-            <div class="w3-content w3-display-container">
-                <img class="mySlides" src="p1.jpg" style="width:100%">
-                <img class="mySlides" src="p2.jpg" style="width:100%">
-                <img class="mySlides" src="p3.jpg" style="width:100%">
-                <img class="mySlides" src="p4.jpg" style="width:100%">
-                <img class="mySlides" src="p5.jpg" style="width:100%">
-                <img class="mySlides" src="p6.jpg" style="width:100%">
-
-                <button class="img-button w3-button w3-black display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="img-button w3-button w3-black display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-
-            <img class="text-img" src="t2.jpg">
-            <div id="daumRoughmapContainer1552541012399" class="root_daum_roughmap root_daum_roughmap_landing" style="margin: 20px auto;"></div>
-            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-            <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                    "timestamp": "1552541012399",
-                    "key": "sm3t",
-                    "mapWidth": "640",
-                    "mapHeight": "360"
-                }).render();
-            </script>
-
-        </div>
-    </div>
+    <img class="text-img" src="p1.jpg">
+    <div id="daumRoughmapContainer1552541012399" class="root_daum_roughmap root_daum_roughmap_landing" style="margin: 20px auto;"></div>
     <img class="text-img" src="t3.jpg">
-    <footer>
-        <div> 결혼식은 전통혼례로 진행됩니다. </div>
-        <div> 이 모바일 청접장은 기존 모바일 청첩장을 신부가 직접 수정한 것입니다.</div>
-    </footer>
 </body>
-<script>
 
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-    }
-
-    function init() {
-        setInterval(function() {
-            plusDivs(1);
-        }, 3000);
-    }
-
-    // var dday = document.getElementById("dday");
-    // if(dday) {
-    //     var now = new Date();
-    //     var then = new Date("2019-04-13"); // 크리스마스 
-    //     var gap = then.getTime() - now.getTime();
-    //     gap = Math.floor(gap / (1000 * 60 * 60 * 24)); 
-    //     dday.innerText = "D-day " + gap;
-    // } 
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+    new daum.roughmap.Lander({
+        "timestamp": "1552541012399",
+        "key": "sm3t",
+        "mapWidth": "640",
+        "mapHeight": "360"
+    }).render();
 </script>
-
 </html>
