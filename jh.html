@@ -53,6 +53,30 @@
         transform: translate(0%, -50%);
     }
 
+
+    .QandA {
+        height: 500px;
+        overflow-y: scroll;
+        margin: 40px auto;
+        padding: 20px;
+        width: 90%;
+        font-size: 25px;
+        font-family: monospace;
+        border: 1px solid black;
+    }
+
+    .QandA h1 {
+        font-family: monospace;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .question {
+        font-weight: bold;
+        color: #f44336;
+        margin-top: 15px;;
+    }
+
     footer {
         background: #908f8c;
         text-align: center;
@@ -61,7 +85,6 @@
         padding: 10px;
         font-size: 18px;
         line-height: 24px;
-
     }
 </style>
 
@@ -95,6 +118,64 @@
             </script>
 
         </div>
+    </div>
+
+    <div class="QandA">
+        <h1> < 맨날 물어보는 질문과 답변 > </h1>
+        <div class="question">Q. 전통혼례는 누가하자고 했나요?</div>
+        <div class="answer">A. 둘다 재미없는 결혼식은 하지말자는 생각이 같았습니다.</div>
+
+        <div class="question">Q. 가마타고 입장하나요?</div>
+        <div class="answer">A. 가마는 아닌데 비슷한것 타고 입장합니다.</div>
+
+        <div class="question">Q. 신랑은 말타고 입장하나요?</div>
+        <div class="answer">A. 말은 누가 키우나요.</div>
+
+        <div class="question">Q. 살아있는 닭 날리나요?</div>
+        <div class="answer">A. 안타깝지만 닭은 출연자 목록에 없습니다.</div>
+
+        <div class="question">Q. 다른거 뭐또 하나요?</div>
+        <div class="answer">A. 아주짧게 사물놀이 같은 축하공연이 있는데, 당일 섭외사정에 따라 결정됩니다.</div>
+
+        <div class="question">Q. 실내에서 도데체 어떻게 전통혼례를 하나요?</div>
+        <div class="answer">A. 실외입니다. 날씨가 걱정입니다.</div>
+
+        <div class="question">Q. 그럼 밥은 뭐주나요?</div>
+        <div class="answer">A. 가마솥에 잔치국수... 는 아니고 그냥 뷔페입니다. 야외식장앞에 건물안에서 먹습니다</div>
+
+        <div class="question">Q. 사진은 합성인가요?</div>
+        <div class="answer">A. 마카오입니다. 현지 올로케입니다.</div>
+
+        <div class="question">Q. 외국에서 찍었으면 돈 많이 들었겠네요?</div>
+        <div class="answer">A. 다신 안합니다.</div>
+
+        <div class="question">Q. 신혼 여행은 어디로 가나요?</div>
+        <div class="answer">A. 이탈리아 로마 인, 스위스 취리히 아웃으로 2주정도 갑니다.</div>
+
+        <div class="question">Q. 직항인가요?</div>
+        <div class="answer">A. 사진찍는데 돈을 다썼습니다.</div>
+
+        <div class="question">Q. 언제가나요?</div>
+        <div class="answer">A. 월요일 아침에 갑니다.</div>
+
+        <div class="question">Q. 그럼 그전엔 뭐하나요?</div>
+        <div class="answer">A. 각자 집에서 쉬고 싶습니다.</div>
+
+        <div class="question">Q. 왜 이렇게 결혼을 급하게 준비 하나요?</div>
+        <div class="answer">A. 친구가 2달만에 저렴하게해서 이겨보려고 1달반 했는데, 전통혼례라 싸지 않네요.</div>
+
+        <div class="question">Q. 신혼집은 어딘가요?</div>
+        <div class="answer">A. 분당 정자동(역세권아님)에 조그만 아파트 입니다.</div>
+
+        <div class="question">Q. 그때 사귀었던 그 사람인가요?</div>
+        <div class="answer">A. 아마 맞을겁니다. 그래도 식장에서는 괜한말 꺼내지 마세요</div>
+
+        <div class="question">Q. 여자는 뭐하는 사람인가요?</div>
+        <div class="answer">A. 코딩 합니다.</div>
+
+        <div class="question">Q. 남자는 뭐하는 사람인가요?</div>
+        <div class="answer">A. 엑셀 합니다.</div>
+
     </div>
     <img class="text-img" src="t3.jpg">
     <footer>
@@ -131,15 +212,6 @@
             plusDivs(1);
         }, 3000);
     }
-
-    // var dday = document.getElementById("dday");
-    // if(dday) {
-    //     var now = new Date();
-    //     var then = new Date("2019-04-13"); // 크리스마스 
-    //     var gap = then.getTime() - now.getTime();
-    //     gap = Math.floor(gap / (1000 * 60 * 60 * 24)); 
-    //     dday.innerText = "D-day " + gap;
-    // } 
 </script>
 
 </html>
